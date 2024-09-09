@@ -5,20 +5,20 @@
 class Co < Formula
   desc ""
   homepage ""
-  version "0.1.4"
+  version "0.2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/pkshimizu/co/releases/download/v0.1.4/co_Darwin_x86_64.tar.gz"
-      sha256 "49e0d7cf47946038ee7528e98f58efd02ba772d25906707f0064469715e69be2"
+      url "https://github.com/pkshimizu/co/releases/download/v0.2.0/co_Darwin_x86_64.tar.gz"
+      sha256 "ec3d2fae681c00e96ccf64ffcf5dce7d826ec691b570e3d0851364f3f4fe9f26"
 
       def install
         bin.install "co"
       end
     end
     on_arm do
-      url "https://github.com/pkshimizu/co/releases/download/v0.1.4/co_Darwin_arm64.tar.gz"
-      sha256 "5544c55ff8db0341d3f2d56e8b06b49326bffd550dac0c96084eae55cfeb62b7"
+      url "https://github.com/pkshimizu/co/releases/download/v0.2.0/co_Darwin_arm64.tar.gz"
+      sha256 "93884c1084977cd4db866daf5e2edab1a028d00dc66d0edbaea4dee5f916410e"
 
       def install
         bin.install "co"
@@ -29,8 +29,8 @@ class Co < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pkshimizu/co/releases/download/v0.1.4/co_Linux_x86_64.tar.gz"
-        sha256 "486cdd1372d8eeb80efdb945af21fc110fb9ec08cfd0b5586f883e8ca71dadf2"
+        url "https://github.com/pkshimizu/co/releases/download/v0.2.0/co_Linux_x86_64.tar.gz"
+        sha256 "7de2aaac55b4339173fe5c50ced293029f84fc19341cf3a82f141689fbeae6e6"
 
         def install
           bin.install "co"
@@ -39,8 +39,8 @@ class Co < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pkshimizu/co/releases/download/v0.1.4/co_Linux_arm64.tar.gz"
-        sha256 "af04dc8bec4b3ce53d191d415b27b47b3ebd40d9c7d3eae2fe12a1a05beca367"
+        url "https://github.com/pkshimizu/co/releases/download/v0.2.0/co_Linux_arm64.tar.gz"
+        sha256 "576a11873e875d8759e5990cff1af9a5bd79f55360c9f22cfa08d41971a5def1"
 
         def install
           bin.install "co"
