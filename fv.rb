@@ -5,12 +5,12 @@
 class Fv < Formula
   desc "TUI file viewer/manager built on a Component Architecture"
   homepage "https://github.com/pkshimizu/fv"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/pkshimizu/fv/releases/download/v0.1.2/fv-aarch64-apple-darwin.tar.gz"
-      sha256 "d780e538ee169c65c47760961f1aae6fd6bdf7e73ff943f5f4f1806435a83324"
+      url "https://github.com/pkshimizu/fv/releases/download/v0.1.3/fv-aarch64-apple-darwin.tar.gz"
+      sha256 "7480e60846106057c12dc0aed27b51b72ae7c7df4c1fd3903bec0cc64e65649a"
 
       def install
         bin.install "fv"
@@ -21,8 +21,8 @@ class Fv < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pkshimizu/fv/releases/download/v0.1.2/fv-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "8172d7e98d515b35ce1628423effda3c3c27e5ed9b6dbb1bcaaf20bb75931e1c"
+        url "https://github.com/pkshimizu/fv/releases/download/v0.1.3/fv-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "0b740209f7cf0ac77d33ec4d32efe717952e7509da6f3a9f137a42ec74ce4423"
 
         def install
           bin.install "fv"
